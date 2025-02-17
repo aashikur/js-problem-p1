@@ -20,7 +20,13 @@ output: 2
 sample-input: 
 
 numbers = [5,6,11,12,98, 5]
+// Task-3: 
+// Write a function to count the number of vowels in a string.
 
+function countVowels(str) {
+    const vowels = 'aeiouAEIOU';
+    return str.split('').filter(char => vowels.includes(char)).length;
+}
 find: 25
 
 output: 0
